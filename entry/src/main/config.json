@@ -1,0 +1,75 @@
+{
+  "app": {
+    "bundleName": "com.example.designview",
+    "vendor": "example",
+    "version": {
+      "code": 1000000,
+      "name": "1.0.0"
+    }
+  },
+  "deviceConfig": {
+    "default": {"network": {"cleartextTraffic": true}}
+  },
+  "module": {
+    "package": "com.example.designview",
+    "name": ".MyApplication",
+    "mainAbility": "com.example.designview.LoginAbility",
+    "deviceType": [
+      "phone"
+    ],
+    "distro": {
+      "deliveryWithInstall": true,
+      "moduleName": "entry",
+      "moduleType": "entry",
+      "installationFree": false
+    },
+    "abilities": [
+      {
+        "skills": [
+          {
+            "entities": [
+              "entity.system.home"
+            ],
+            "actions": [
+              "action.system.home"
+            ]
+          }
+        ],
+        "name": "com.example.designview.LoginAbility",
+        "description": "$string:mainability_description",
+        "icon": "$media:icon",
+        "label": "$string:entry_MainAbility",
+        "launchType": "standard",
+        "orientation": "unspecified",
+        "visible": true,
+        "type": "page"
+      },
+      {
+        "name": "com.example.designview.FindAbility",
+        "description": "findability_description",
+        "icon": "$media:icon",
+        "launchType": "standard",
+        "orientation": "unspecified",
+        "visible": true,
+        "type": "page"
+      }
+    ],
+    "metaData":{
+      "customizeData":[
+        {
+          "name": "hwc-theme",
+          "extra": "",
+          "value": "androidhwext:style/Theme.Emui.Light.NoTitleBar"
+        }
+      ]
+    },
+    "reqPermissions": [
+      {
+        "name": "ohos.permission.GET_NETWORK_INFO"
+      },
+      {
+        "name": "ohos.permission.INTERNET"
+      }
+    ]
+  }
+}

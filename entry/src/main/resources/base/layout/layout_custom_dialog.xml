@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DependentLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:id="$+id:custom_container"
+    ohos:height="match_content"
+    ohos:width="300vp"
+    ohos:background_element="#F5F5F5">
+
+    <Text
+        ohos:id="$+id:verifyTitle"
+        ohos:height="match_content"
+        ohos:width="match_content"
+        ohos:horizontal_center="true"
+        ohos:margin="8vp"
+        ohos:padding="8vp"
+        ohos:text="Verification Code"
+        ohos:text_size="16fp"/>
+    <Image
+        ohos:id="$+id:verifyImg"
+        ohos:height="150vp"
+        ohos:width="280vp"
+        ohos:below="$id:verifyTitle"
+        ohos:horizontal_center="true"
+        ohos:image_src="$media:harmonyLoGo"
+        ohos:clip_alignment="center"/>
+
+    <TextField
+        ohos:id="$+id:verifyCode"
+        ohos:height="match_content"
+        ohos:width="match_parent"
+        ohos:hint="Please Enter The Number Here"
+        ohos:background_element="$graphic:verifycode"
+        ohos:text_alignment="center"
+        ohos:below="$id:verifyImg"
+        ohos:text_size="18vp"
+        />
+    <Button
+        ohos:id="$+id:dialogbutton"
+        ohos:height="match_content"
+        ohos:width="match_parent"
+        ohos:background_element="#FF9912"
+        ohos:below="$id:verifyCode"
+        ohos:margin="8vp"
+        ohos:padding="8vp"
+        ohos:text="Confirm"
+        ohos:text_color="#FFFFFF"
+        ohos:text_size="18vp"/>
+</DependentLayout>

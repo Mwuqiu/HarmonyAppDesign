@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:alignment="center"
+    ohos:orientation="vertical">
+
+    <DirectionalLayout
+        ohos:top_margin="10vp"
+        xmlns:ohos="http://schemas.huawei.com/res/ohos"
+        ohos:width="match_parent"
+        ohos:height="match_content"
+        ohos:orientation="horizontal"
+        ohos:background_element="$graphic:background_text_field"
+        >
+        <TextField
+            ohos:id="$+id:q_box"
+            ohos:width="300vp"
+            ohos:height="match_content"
+            ohos:left_padding="10vp"
+            ohos:hint="Please  Input Your Question Here                 "
+            ohos:text_size="15vp"
+            />
+        <Button
+            ohos:id="$+id:q_btn"
+            ohos:height="40vp"
+            ohos:width="match_content"
+            ohos:text="Search!"
+            ohos:text_color="#f8f8f8"
+            ohos:left_margin="10vp"
+            ohos:text_size="15vp"
+            ohos:background_element="$graphic:search_btn"
+            />
+    </DirectionalLayout>
+
+    <ListContainer
+        ohos:top_margin="5vp"
+        ohos:id="$+id:list_container"
+        ohos:height="match_parent"
+        ohos:width="match_parent"
+        ohos:layout_alignment="horizontal_center"/>
+
+</DirectionalLayout>

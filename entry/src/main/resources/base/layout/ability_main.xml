@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DependentLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:width="match_parent"
+    ohos:height="match_parent"
+    ohos:background_element="#f8f8f8"
+    >
+
+    <Image
+        ohos:id="$+id:loginLogo"
+        ohos:width="match_content"
+        ohos:height="match_content"
+        ohos:image_src="$media:harmonyLogo"
+        />
+
+    <DirectionalLayout
+        ohos:below="$id:loginLogo"
+        ohos:id="$+id:usernamesum"
+        ohos:height="match_content"
+        ohos:width="match_parent"
+        ohos:orientation="horizontal"
+        ohos:top_margin="60vp"
+        ohos:left_margin="15vp"
+        ohos:right_margin="15vp"
+        ohos:background_element="$graphic:background_text_field"
+        >
+        <Image
+            ohos:id="$+id:usernameicon"
+            ohos:width="50vp"
+            ohos:height="50vp"
+            ohos:image_src="$media:username"
+            />
+        <TextField
+            ohos:id="$+id:i_username"
+            ohos:width="match_parent"
+            ohos:height="50vp"
+            ohos:left_padding="13vp"
+            ohos:hint="please enter your username"
+            ohos:text_size="18vp"
+            ohos:element_selection_left_bubble="$media:icon"
+            ohos:text="mrbird"
+            />
+    </DirectionalLayout>
+
+    <DirectionalLayout
+        ohos:below="$id:usernamesum"
+        ohos:id="$+id:passwordsum"
+        ohos:height="match_content"
+        ohos:width="match_parent"
+        ohos:orientation="horizontal"
+        ohos:top_margin="15vp"
+        ohos:left_margin="15vp"
+        ohos:right_margin="15vp"
+        ohos:background_element="$graphic:background_text_field"
+        >
+        <Image
+            ohos:id="$+id:passworldicon"
+            ohos:width="50vp"
+            ohos:height="50vp"
+            ohos:image_src="$media:password"
+            />
+        <TextField
+            ohos:id="$+id:i_userpasswd"
+            ohos:width="match_parent"
+            ohos:height="50vp"
+            ohos:below = "$id:usernamesum"
+            ohos:text_size="18vp"
+            ohos:left_padding="13vp"
+            ohos:hint="please enter your password"
+            ohos:text_input_type="pattern_number_password"
+            />
+    </DirectionalLayout>
+
+    <Button
+        ohos:id="$+id:btn_login"
+        ohos:width="300vp"
+        ohos:height="match_content"
+        ohos:text="SIGN   IN"
+        ohos:horizontal_center="true"
+        ohos:text_size="20vp"
+        ohos:top_margin="25vp"
+        ohos:below="$id:passwordsum"
+        ohos:background_element="$graphic:loginbtn"
+        ohos:text_color="#f8f8f8"
+        />
+
+    <Button
+        ohos:id="$+id:btn_registration"
+        ohos:width="match_content"
+        ohos:height="match_content"
+        ohos:hint="register now"
+        ohos:text_size="15vp"
+        ohos:left_margin="20vp"
+        ohos:top_margin="5vp"
+        ohos:below="$id:btn_login"
+        ohos:left_padding="8vp"
+        ohos:right_padding="8vp"
+        ohos:basement="#000000"
+        />
+
+    <Button
+        ohos:id="$+id:btn_forgetpw"
+        ohos:width="match_content"
+        ohos:height="match_content"
+        ohos:hint="forget password"
+        ohos:text_size="15vp"
+        ohos:left_margin="200vp"
+        ohos:top_margin="5vp"
+        ohos:below="$id:btn_login"
+        ohos:left_padding="8vp"
+        ohos:right_padding="8vp"
+        ohos:basement="#000000"
+        />
+
+</DependentLayout>

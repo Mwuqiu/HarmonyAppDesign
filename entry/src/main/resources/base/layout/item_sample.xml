@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_content"
+    ohos:width="match_parent"
+    ohos:background_element="$graphic:item_field"
+    ohos:left_margin="6vp"
+    ohos:right_margin="6vp"
+    >
+
+    <DirectionalLayout
+        ohos:height="match_content"
+        ohos:width="match_parent"
+        ohos:left_margin="15vp"
+        ohos:orientation="horizontal"
+        ohos:right_margin="15vp"
+        >
+        <Image
+            ohos:id="$+id:itemicon"
+            ohos:height="50vp"
+            ohos:width="50vp"
+            ohos:image_src="$media:itemicon"
+            />
+        <DirectionalLayout
+            ohos:height="50vp"
+            ohos:width="match_content"
+            ohos:orientation="vertical"
+            >
+            <Text
+                ohos:id="$+id:item_index"
+                ohos:height="match_content"
+                ohos:width="match_content"
+                ohos:layout_alignment="left"
+                ohos:left_margin="12vp"
+                ohos:padding="4vp"
+                ohos:text="Item0"
+                ohos:text_size="15vp"/>
+            <Text
+                ohos:id="$+id:item_content"
+                ohos:height="match_content"
+                ohos:width="match_content"
+                ohos:layout_alignment="left"
+                ohos:left_margin="15vp"
+                ohos:padding="4vp"
+                ohos:text="Item0"
+                ohos:text_size="10vp"
+                />
+        </DirectionalLayout>
+
+    </DirectionalLayout>
+
+</DirectionalLayout>
